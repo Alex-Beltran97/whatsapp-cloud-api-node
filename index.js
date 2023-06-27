@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-const PORT = 8080;
+const PORT = 8080 || process.env.PORT;
 
 const token = process.env.TOKEN;
 const myToken = process.env.MYTOKEN;
